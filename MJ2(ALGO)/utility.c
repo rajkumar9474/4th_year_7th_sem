@@ -1,4 +1,9 @@
+void print(int a);
+
+
 void arr_p(int arr[],int s,int e){
+    /*to print elements of array with the array pointer,start index, ending index
+    */
     printf("[");
     for(int i = s;i<=e;i++){
         printf(" %d ,",arr[i]);
@@ -7,7 +12,17 @@ void arr_p(int arr[],int s,int e){
     printf("\n");
 }
 
-int max(int a,int b,int c){
+// void link_print(node *link){
+//     node *temp;
+//     temp = link;
+//     while(temp != NULL){
+//         print(temp->data);
+//         temp = temp->next;
+//     }
+// }
+
+
+int maxi(int a,int b,int c){
     if(a>b && a>c)
         return a;
     else if (b>a && b>c) 
